@@ -1,0 +1,243 @@
+.selector-atributo a[href] {
+    color: aqua;
+
+}
+
+.selector-atributo a[target="_parent"] {
+    background-color: brown;
+}
+
+.selector-atributo a[href*="plomeria"] {
+    font-size: 25px;
+}
+
+/* Al comienzo */
+.selector-atributo a[href^="https"] {
+    text-decoration: none;
+}
+
+/* Al final */
+.selector-atributo a[href$=".com"] {
+    background-color: black;
+}
+
+/* hijos directos */
+.selector-hijo>li {
+    color: brown;
+
+}
+
+/* hijos descentientes "nietos" */
+.selector-hijo b {
+    color: blueviolet;
+}
+
+
+/* >>>>>>>>>>>>>>>> P S U D O C L A S E S <<<<<<<<<<<<<<<<< */
+/* DAN ESTILO DEPENDIENDO DEL ESTADO, POSICION, CONTEXTO */
+
+.form-pseudoclase *:required{
+    border-color: brown;
+}
+.form-pseudoclase *:valid{
+    border-style: outset;
+    border-color:yellow;
+}
+.form-pseudoclase *:focus{
+    background-color: aqua;
+} 
+.form-pseudoclase *:disabled{
+    border-color: red;
+}
+.form-pseudoclase *:hover{
+    background-color: blueviolet;
+}
+
+.nav-pseudoclase a:visited{
+    color:green;
+}
+.nav-pseudoclase>a:hover{
+    color:black;
+}
+
+.p-hover:hover{
+    font-size: 20px;
+}
+
+#indice:target{
+    background-color: aqua;
+}
+
+.ol-pseudoclases>li:first-child{
+
+    color: green;
+}
+.ol-pseudoclases>li:last-child{
+
+    color: blueviolet;
+}
+
+.ol-pseudoclases>li:nth-child(9){
+    font-size: 25px;
+}
+.ol-pseudoclases>li:nth-child(even){
+    color:orangered;
+}
+.ol-pseudoclases>li:nth-child(3n){
+    background-color: aquamarine;
+}
+
+.article-pseudoclase>p:first-of-type{
+    background-color: pink;
+}
+.article-pseudoclase>p:last-of-type{
+    background-color: pink;
+}
+.article-pseudoclase div:nth-of-type(2){
+    background-color:rebeccapurple;
+}
+.article-pseudoclase *:not(div){
+    background-color:red;
+}
+
+/* >>>>>>>>>>>>>>>>>>>> P S E U D O E L E M E N T O S <<<<<<<<<<<<<<<<<<<<<<< */
+
+.saga-geminis::before{
+    content: "🐾";
+}
+.saga-geminis::after{
+    content:"🐾";
+}
+
+.saga-precio::before{
+    content: "$";
+    font-weight: bold;
+}
+.saga-precio::after{
+    content: "USD";
+    font-weight: bold;
+}
+
+.p-pseudoelemento::first-letter{
+        font-weight: bold;
+        font-size: 32px;
+}
+.p-pseudoelemento::first-line{
+        color: aqua;
+}
+.p-pseudoelemento::selection{
+        color:greenyellow;
+        background: black;
+}
+
+/* >>>>>>>>>>>>>>>> E L   A L G O R I T M O   DE   C S S <<<<<<<<<<<<<<<<< */
+/* Es la forma como se aplican los estilos a documento HTML */
+/* 
+1)La Cascada es el mecanismo en que el navegador aplica los estilos.
+Tomando encuenta el siguiente orden:
+1)El Origen del Codigo:
+    -El User Agent (Estilo por el navegador por defecto).
+    - Personalizacion del usuario
+    - Los estilos del autor.
+2)La Especificacion del Selector.
+3)Orden de Aparicion.
+*/
+
+/* 2)La Especifidad es el peso que tiene un selector cuando hay conflictos de estilo.
+Se calcula de la siguiente manera 
+Etiquetas y pseudoelementos----------------------0, 0, 0, 1
+Clases, atributos y pseudoclases-----------------0, 0, 0, 1
+identificadores----------------------------------0, 0, 0, 1
+Estilos en linea---------------------------------0, 0, 0, 1
+!important ------------------------Rompe la especificacion
+*/
+
+.algoritmo li:first-child{
+    border:blueviolet dashed 10px  ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
