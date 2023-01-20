@@ -156,17 +156,38 @@ Estilos en linea---------------------------------0, 0, 0, 1
     border:blueviolet dashed 10px  ;
 }
 
+/* >>>>>>>>>>>>>>>>>>>>>> C A J A  D E  L I N E A  &  C A J A  D E  B L O Q U E <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
+ /* CAJA DE LINE
+    .Solo ocupa el espacio para mostra su contenido
+    .No se puede modificar el ancho y alto
+    .Permite otro elementos a los laterales
+    .Padding y margin solo empujan elementos adyacentes en horizontal nunca ne vertical.
+    CAJA DE BLOQUE
+    .Ocupa todo el ancho disponible.
+    .Ancho y alto se pueden modificar.
+    .No permiten otros elementos a sus lados ni especificando las dimenciones de ANCHO
+ 
+ */
 
+.caja-line, .caja-bloque{
+    background-color: brown;
+    color: white; 
+    width: 500px;
+    height:200px;
+    border: medium solid black;
+    padding: 16px;
+}
+  
+.caja-line{
+    margin: 32px;
+}
 
+.caja-bloque{
+    margin:48px;
+}
 
-
-
-
-
-
-
-
+/* <<<<<<<<<<<<<<<<<<< ME QUE DE EN LA PROPIEDAD DISPLAY <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 
 
